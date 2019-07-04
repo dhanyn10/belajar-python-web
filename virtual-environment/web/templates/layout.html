@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href={{url_for("static", filename="css/main.css")}}>
+        <title>Python</title>
+    </head>
+    <body>
+        <h1>Python with Virtual Environment</h1>
+        <header>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            {%block content%}
+            {%endblock%}
+        </div>
+    </body>
+</html>
